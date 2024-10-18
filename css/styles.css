@@ -68,6 +68,18 @@ h1, h2, h3, p {
     color: #2e2f42;
     padding: 24px 0;
     display: inline-block;
+    position: relative;
+}
+.active::after {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
 }
 .header-menu-link:hover,
 .header-menu-link:focus{
@@ -97,6 +109,12 @@ h1, h2, h3, p {
 .title-section {
     background-color: #2e2f42;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .title-text {
@@ -155,6 +173,15 @@ h1, h2, h3, p {
 }
 .container-list .features-box{
     flex-basis: calc((100% - 72px) / 4);
+}
+.rectangle {
+    display: flex;
+    padding: 24px 100px;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
 }
 .feature-title{
     margin-bottom: 8px;
@@ -218,6 +245,20 @@ h1, h2, h3, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+}
+.team-icon-list{
+    display: flex;
+    flex-direction: column;
+}
+team-soc-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #fff;
 }
 /* ______________________________FOUR_____________ */
 .portfolio-containter {
