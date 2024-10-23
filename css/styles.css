@@ -32,6 +32,7 @@ h1, h2, h3, p {
 }
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container{
     display: flex;
@@ -111,6 +112,7 @@ h1, h2, h3, p {
 .title-section {
     background-color: #2e2f42;
     padding: 188px 0;
+    border-bottom: 1px inside #e7e9fc;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -185,6 +187,7 @@ h1, h2, h3, p {
     border-radius: 4px;
     background: #f4f4fd;
     margin-bottom: 8px;
+    align-items: center;
 }
 .feature-title{
     margin-bottom: 8px;
@@ -268,17 +271,18 @@ h1, h2, h3, p {
     align-items: center;
     justify-content: center;
     background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-team-soc-icon{
+team-soc-icon {
     top: 50px;
     left: 50px;
     transform: translate(-50%, -50%);
     fill: #f4f4fd;
-    transition: background-color 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-soc-icon:hover{
-    background-color: #4d5ae5;
-    border-radius: 50px;
+.team-soc-link:hover,
+team-soc-link:active {
+    background-color: #404bbf;
+    
 }
 /* ______________________________FOUR_____________ */
 .portfolio-containter {
@@ -310,6 +314,7 @@ team-soc-icon{
     margin-bottom: 8px
 }
 .portfolio-box{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-basis: calc((100% - 48) / 3);
 }
 .portfolio-box:hover .portfolio-cover-text {
@@ -332,17 +337,17 @@ team-soc-icon{
     height: 100%;
     padding: 40px 32px;
     transform: translateY(100%);
-    transition: transform 250ms ease;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    transition: box-shadow 250ms ease cubic-bezier(0.4, 0, 0.2, 1)
 }
-.portfolio-card:hover {
+
+.portfolio-box:hover,
+.portfolio-box:focus{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    cursor: pointer;
 }
 .portfolio-row-item{
     font-size: 16px;
@@ -385,6 +390,10 @@ team-soc-icon{
     max-width: 264px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-logo:hover,
+.footer-logo:focus{
+    color: #404bbf;
+}
 .footer-soc{
     display: block;
 }
@@ -411,11 +420,12 @@ team-soc-icon{
     align-items: center;
     justify-content: center;
     background-color: #4d5ae5;
-    transition: background-color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.footer-soc-link:hover{
-    background-color: #31D0AA;
+.footer-soc-link:hover,
+.footer-soc-link:focus{
+    background-color: #31d0aa;
 }
 .footer-soc-icon {
     top: 50px;
