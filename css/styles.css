@@ -70,7 +70,7 @@ h1, h2, h3, p {
     padding: 24px 0;
     display: inline-block;
     position: relative;
-    transition: color 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active::after {
     content: '';
@@ -100,7 +100,7 @@ h1, h2, h3, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    transition: color 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
 .menu-contact-link:hover,
@@ -113,7 +113,7 @@ h1, h2, h3, p {
     background-color: #2e2f42;
     padding: 188px 0;
     border-bottom: 1px inside #e7e9fc;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -148,7 +148,7 @@ h1, h2, h3, p {
     border-radius: 4px;
     padding: 16px 32px;
     margin: 0 auto;
-    transition: background-color 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-content:hover,
@@ -184,6 +184,7 @@ h1, h2, h3, p {
     padding: 24px 100px;
     justify-content: center;
     border: 1px solid #8e8f99;
+    height: 112px; 
     border-radius: 4px;
     background: #f4f4fd;
     margin-bottom: 8px;
@@ -420,8 +421,7 @@ team-soc-link:active {
     align-items: center;
     justify-content: center;
     background-color: #4d5ae5;
-    transition: background-color 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus{
